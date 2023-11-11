@@ -1,0 +1,26 @@
+.shopping {
+  width: 100%;
+  color: #efecec;
+  /* color: #c4bbf0; */
+  /* color: #453953; */
+  /* color: #f0d9da; */
+  position: relative;
+}
+
+.shopping #section {
+  text-align: center;
+  margin: 5rem auto;
+}
+
+.shopping .products {
+  gap: 1rem;
+  display: grid;
+}
+
+/*if the window is greater than 768px */
+@media screen and (min-width: 768px) {
+  .products {
+    grid-template-columns: repeat(3, 1fr);
+    /* align-items: start -> each card is it's own length */
+  }
+}

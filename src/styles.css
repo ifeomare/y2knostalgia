@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  /* background-color: #cadefc; */
+  /* background-color: #1a2849; */
+  /* background-color: #363b4e; */
+  /* background-image: url("https://wallpapercave.com/wp/wp6931987.jpg"); */
+  background-image: url("https://wallpapercave.com/wp/wp6931987.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #f3cba5; */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
