@@ -40,6 +40,7 @@ const ContactForm = () => {
           <input type="text" placeholder="How can we help?"></input>
           <input type="submit" value="Submit"></input>
         </div>
+        <button id="form-btn">Submit</button>
       </form>
     </div>
   );

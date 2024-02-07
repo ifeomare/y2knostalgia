@@ -1,0 +1,25 @@
+.userCart .cartprod {
+  display: flex;
+  padding: 5px 0 5px 0;
+  justify-content: space-evenly;
+}
+
+.cartprod .cart-img {
+  display: flex;
+  align-items: center;
+}
+
+.cartprod img {
+  width: 150px;
+}
+
+.cartprod .info {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.cartprod .pricing span {
+  margin-right: 50px;
+}

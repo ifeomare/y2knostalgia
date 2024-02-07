@@ -1,0 +1,26 @@
+.accountpage {
+  text-align: center;
+  top: 30%;
+  left: 35%;
+  width: 35vw;
+  height: 50vh;
+  position: absolute;
+  border-radius: 25px;
+  box-shadow: 10px 10px;
+  border: 2px solid black;
+}
+
+.accountpage form {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+}
+.accountpage div {
+  margin: 20px;
+}
+
+.accountpage .sign-up {
+  width: 70px;
+  height: 50px;
+  align-self: center;
+}

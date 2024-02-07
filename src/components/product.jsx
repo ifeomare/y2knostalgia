@@ -1,11 +1,15 @@
 import React from "react";
-import "../../styles/product.css";
-import Cart from "../../pages/cart.js";
+import "../styles/product.css";
+import Cart from "../pages/cart";
 
-const Product = (props) => {
+const Product = ({ addToLocalCart, addToLocalList, ...props }) => {
   const addCartProduct = () => {
-    console.log("onClick function has executed", props);
-    return <Cart closeModal={null} {...props} />;
+    addToLocalCart(props);
+  };
+
+  const addListProduct = () => {
+    addToLocalList(props);
+    document.getElementById("atw-btn").style.color = "red";
   };
 
   return (
@@ -13,6 +17,9 @@ const Product = (props) => {
       <div className="card">
         <div className="img-div">
           <div className="overlay">
+            <p id="atw-btn" onClick={addListProduct}>
+              &#9825; Wishlist
+            </p>
             <button id="atc-button" onClick={addCartProduct}>
               Add to cart
             </button>

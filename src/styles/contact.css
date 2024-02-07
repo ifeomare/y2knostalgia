@@ -1,0 +1,25 @@
+.contact {
+  top: 30%;
+  left: 35%;
+  width: 35vw;
+  height: 50vh;
+  position: absolute;
+  border-radius: 25px;
+  box-shadow: 10px 10px;
+  border: 2px solid black;
+}
+
+.contact form {
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+}
+.contact div {
+  text-align: center;
+  margin: 10px;
+}
+.contact #form-btn {
+  width: 70px;
+  height: 50px;
+  align-self: center;
+}

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Cart from "../../pages/cart";
+import Cart from "../pages/cart";
 
-import "../../styles/nav.css";
+import "../styles/nav.css";
 
-const Nav = () => {
+const Nav = ({ cart }) => {
   const [modal, setModal] = useState(false);
 
   return (
@@ -53,7 +53,7 @@ const Nav = () => {
           />
         </div>
       </nav>
-      {modal && <Cart closeModal={setModal} />}
+      {modal && <Cart closeModal={setModal} props={null} cart={cart} />}
     </>
   );
 };
